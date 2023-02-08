@@ -1,19 +1,13 @@
 ﻿using System;
 using Primo.Aplication.Class;
 
-namespace Primo.Aplication
+namespace Primo.Aplication;
+
+public static class Program
 {
-    public static class Program
+    public static void Main()
     {
-        public static void Main()
-        {
-            const string msg = "Hello, World!";
-            var primo = new PrimoClass();
-
-            var result = primo.CheckPrimo(5);
-
-            Console.WriteLine(msg);
-            Console.WriteLine(result);
-        }
+        var result = new PrimoClass().ToString(11);
+        Console.WriteLine(result);
     }
 }
